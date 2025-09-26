@@ -1,0 +1,114 @@
+/* Full-width Slideshow container */
+* {
+    box-sizing: border-box;
+}
+.slideshow-container {
+    position: relative;
+    width: 100%; /* Make it full width */
+    max-width: 100%; /* Ensure it spans across the screen */
+    height: 500px; /* Adjust the height for a balanced look */
+    overflow: hidden;
+    border-radius: 8px;
+}
+.slide h3{
+    font-size: 24px;
+}
+
+/* Individual slides */
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Show only the active slide */
+.slide.active {
+    display: block;
+    animation: fadeEffect 0.8s ease-in-out;
+}
+
+/* Ensuring all images fit within the full-width container */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the container */
+    border-radius: 10px;
+}
+
+/* Overlay for text */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.overlay h3 {
+    margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+.overlay p {
+    margin-top: 0; /* Remove extra top margin */
+}
+/* Show overlay when the slide is hovered */
+.slide:hover .overlay {
+    opacity: 0.8;
+}
+
+/* Dot navigation container */
+.dots-container {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/* Individual dots */
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Active dot */
+.dot.active {
+    background-color: #333;
+}
+
+/* Fade effect for transitions */
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slideshow-container {
+        height: 350px; /* Adjust height for smaller screens */
+    }
+
+    .overlay {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+.containers {
+    max-width: 1200px;  /* Adjust the width as needed */
+    margin: 0 auto;     /* Centers the container */
+    padding: 20px;
+}

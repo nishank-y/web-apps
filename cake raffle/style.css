@@ -1,0 +1,127 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3e0; /* Light, warm background */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.confetti-background {
+    position: fixed; /* Fixed position to cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media4.giphy.com/media/Hh9sPYeSWhAUx6NDBM/giphy.gif') center/cover no-repeat;
+    opacity: 0; /* Initially hidden */
+    z-index: -1; /* Pushed behind everything */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+/* Header Styling */
+header {
+    background-color: #ff4081; /* Vibrant pink */
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Main Container */
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for layering */
+    z-index: 1; /* Ensures it's above the background */
+    transition: opacity 0.5s ease-in-out;
+}
+/* Reduce opacity when the winner is drawn */
+.faded {
+    opacity: 0.5; /* Dimmed effect */
+}
+/* Entry Form Styling */
+.entry-form {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers buttons horizontally */
+    gap: 10px; /* Adds space between buttons */
+    margin-top: 15px; /* Adds spacing above the buttons */
+}
+button {
+    flex: 1;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Submit Button */
+#addParticipant {
+    background-color: #ff9800; /* Orange */
+    color: white;
+}
+
+#addParticipant:hover {
+    background-color: #e68900; /* Darker orange */
+}
+
+/* Draw Winner Button */
+#drawWinner {
+    background-color: #4caf50; /* Green */
+    color: white;
+}
+
+#drawWinner:hover {
+    background-color: #388e3c; /* Darker green */
+}
+
+/* Reset Button */
+#resetRaffle {
+    background-color: #007bff; /* Red */
+    color: white;
+    margin-top: 10px;
+}
+
+#resetRaffle:hover {
+    background-color: #1367c0; /* Darker red */
+}
+
+/* Participants List */
+.participants ul {
+    list-style: none;
+    padding: 0;
+}
+
+.participants li {
+    background-color: #ffccbc; /* Soft peach */
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Winner Display */
+.winner-display {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d32f2f; /* Red */
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Homepage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Nishank</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="containers slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="images/face.png" alt="Project 1">
+                <div class="overlay">
+                    <h3>Facebomp</h3>
+                    <p>A fast-paced, fun-filled game where wacky faces pop up, and you have to bomp them before they disappear! Test your reflexes, rack up points, and aim for the highest score. Can you keep up with the challenge? ⚡🔥</p>
+                </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="images/beatblaster.png" alt="Project 2">
+                <div class="overlay">
+                    <h3>BeatBlaster</h3>
+                    <p>Unleash your inner drummer with BeatBlaster! Tap the virtual drum kit to create awesome beats and rhythms. Whether you're a pro or just jamming for fun, feel the groove and make some noise! 🚀🔥</p>
+                </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="images/cake raffle.png" alt="Project 3">
+                <div class="overlay">
+                    <h3>Cake Raffle</h3>
+                    <p>A fun and interactive way to run digital cake raffles! Easily set up, customize, and draw winners with a seamless and engaging experience. Perfect for events, fundraisers, and giveaways!"</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Dot Navigation -->
+        <div class="dots-container">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="container about-content">
+            <img src="photo.jpg" alt="Nishank's Photo">
+            <div class="about-text">
+                <p>Hi, I'm Nishank! A passionate designer and developer who loves crafting creative and user-friendly experiences. I enjoy bringing ideas to life through code and design.</p>
+                <a href="your-resume.pdf" download class="resume-btn">Download My Resume</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Experienced in structuring and optimizing web pages using semantic HTML.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;">90%</div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Skilled in designing responsive and visually appealing layouts.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;">85%</div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Capable of adding interactivity and dynamic functionality to web applications.</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;">75%</div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Nishank. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

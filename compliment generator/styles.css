@@ -1,0 +1,116 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+button:active {
+    transform: scale(0.95);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Kudos Form */
+#kudosForm, #kudosBox {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Textarea */
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    resize: none;
+}
+
+/* Kudos Display */
+/* Kudos Display */
+/* Kudos Display Box */
+/* Kudos Display Box */
+.kudosDisplay {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    color: #444;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: none;  /* Initially hidden */
+}
+
+/* When Kudos is Displayed */
+.kudos-visible {
+    display: block;
+
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #kudosDisplay {
+        font-size: 1.2rem;
+    }
+}

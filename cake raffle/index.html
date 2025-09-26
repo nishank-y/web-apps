@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Raffle 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Cake Raffle 🎂</h1>
+        <p>Enter your name for a chance to win a delicious cake!</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Entry Form -->
+        <div class="entry-form">
+            <input type="text" id="participantName" placeholder="Enter your name">
+            <button id="addParticipant">Submit</button>
+          
+        </div>
+        <div class="button-container">
+            <button id="drawWinner">Draw Winner 🎟️</button>
+            <button id="resetRaffle">Reset 🔄</button>
+        </div>
+
+        <!-- Participants List -->
+        <div class="participants">
+            <h2>Participants</h2>
+            <ul id="participantList"></ul>
+        </div>
+
+        <!-- Draw Button -->
+        
+
+        <!-- Winner Display Area -->
+        <div class="winner-display">
+            <h2 id="winnerText">Winner: ???</h2>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

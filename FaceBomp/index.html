@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceBomp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>FaceBomp</h1>
+    <button id="start-btn">Start Game</button>
+    <p>Score: <span id="score">0</span></p>
+    <p>Time Left: <span id="timer">30</span>s</p>
+    <p id="final-message"></p>
+    
+    <div class="game-board">
+        <div class="hole"><img src="photo.jpg" alt="Face"></div>
+        <div class="hole"><img src="photo.jpg" alt="Face"></div>
+        <div class="hole"><img src="photo.jpg" alt="Face"></div>
+        <div class="hole"><img src="photo.jpg" alt="Face"></div>
+        <div class="hole"><img src="photo.jpg" alt="Face"></div>
+        <div class="hole"><img src="photo.jpg" alt="Face"></div>
+    </div>
+    <audio id="bomp-sound" src="sounds/bomp.wav"></audio>
+    <audio id="end-sound" src="sounds/game-end.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

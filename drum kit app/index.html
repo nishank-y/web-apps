@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatBlaster - Drum Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>🥁 BeatBlaster 🥁</h1>
+
+    <div class="drum-container">
+        <!-- First row: 3 buttons -->
+        <div class="drum-row">
+            <button id="kickButton">Kick (A)</button>
+            <button id="rideButton">Ride (S)</button>
+            <button id="snareButton">Snare (D)</button>
+        </div>
+        <!-- Second row: 2 buttons -->
+        <div class="drum-row">
+            <button id="tomButton">Tom (F)</button>
+            <button id="hihatButton">Hi-Hat (G)</button>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="kickSound" src="sounds/kick.wav"></audio>
+    <audio id="rideSound" src="sounds/ride.wav"></audio>
+    <audio id="snareSound" src="sounds/snare.wav"></audio>
+    <audio id="tomSound" src="sounds/tom.wav"></audio>
+    <audio id="hihatSound" src="sounds/hihat.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

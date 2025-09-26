@@ -1,0 +1,98 @@
+/* Apply a full-page linear gradient background */
+body, html {
+    
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #00aaff, #0066cc); /* Same gradient everywhere */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center and organize game content */
+#game-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Game title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Start button styling */
+#start-btn {
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#start-btn:hover {
+    background-color: #ffdd44;
+}
+
+/* Score and timer display */
+p {
+    font-size: 1.2rem;
+}
+
+/* Game board setup */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Hole design */
+.hole {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #004488, #002244); /* Keeping the hole effect */
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Images inside the holes */
+.hole img {
+    width: 80%; /* 55% of the hole's width */
+    height: 80%; /* 55% of the hole's height */
+    border-radius: 50%; /* Makes it perfectly round */
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0); /* Initially invisible */
+    cursor: pointer;
+}
+
+/* Popping effect for the images */
+.hole img.show {
+    transform: scale(1); /* Appears when active */
+}
+
+/* Final message styling */
+#final-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.hole img.clicked {
+    border: 4px solid tomato;
+}

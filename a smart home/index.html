@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <header>
+        <h1>SmartSphere</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Lighting Control -->
+        <div class="section" id="lighting">
+            <h2><i class="fas fa-lightbulb"></i> Lighting</h2>
+            <label class="toggle-switch">
+                <input type="checkbox" id="lightSwitch" onchange="controlLighting()">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Temperature Control -->
+        <div class="section" id="temperature">
+            <h2><i class="fas fa-thermometer-half"></i> Temperature</h2>
+            <div class="temp-display">
+                
+                <span id="tempValue">78°F</span>
+            </div>
+            <button onclick="increaseTemperature()"><i class="fas fa-plus-circle"></i> Increase</button>
+            <button onclick="decreaseTemperature()"><i class="fas fa-minus-circle"></i> Decrease</button>
+        </div>
+
+        <!-- Music Control -->
+        <div class="section" id="music">
+            <h2><i class="fas fa-music"></i> Music</h2>
+            <div class="song-display">
+              
+                <span id="songName">Click Play to Start</span>
+            </div>
+            <button onclick="togglePlayPause()"><i class="fas fa-play-circle"></i> Play/Pause</button>
+            <button onclick="stopMusic()"><i class="fas fa-stop-circle"></i> Stop</button>
+            <button onclick="nextSong()"><i class="fas fa-step-forward"></i> Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunchVote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ LunchVote</h1>
+        <p>Vote for the best lunch spot!</p>
+
+        <div class="form-container">
+            <input type="text" id="placeInput" placeholder="Add a lunch spot...">
+            <button id="addPlace">Add Place</button>
+        </div>
+        <h3 id="leadingPlace">🏆 Leading: No votes yet</h3>
+
+        
+        <ul id="placesList"></ul>
+        <button id="deletePoll" style="display: none;">🗑️ Delete Poll</button>
+    </div>
+
+    <script type="module" src="lunchvote.js"></script>
+
+</body>
+</html>

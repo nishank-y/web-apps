@@ -1,0 +1,135 @@
+body {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #28074a, #491088);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #6c1dd0;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #ff19db, #ff7f1a);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    margin-top: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a {
+    color: #ff7f1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background: darkred;
+}
+.delete {
+    background: none;
+    border: none;
+    color: #ff7f1a;
+    font-size: 14px; /* Adjust size */
+    cursor: pointer;
+    padding: 3px 5px; /* Reduce padding */
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px; /* Set fixed width */
+    height: 18px; /* Set fixed height */
+    line-height: 18px;
+}
+
+.delete:hover {
+    color: #ff19db; /* Change color on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.category-container {
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: left;
+    color: #ff19db;
+    margin-bottom: 5px;
+}
